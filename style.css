@@ -1,0 +1,620 @@
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+ }
+html {
+    scroll-behavior: smooth;
+}
+ ::-webkit-scrollbar {
+    width: 10px;
+ }
+
+ ::-webkit-scrollbar-track {
+    background-color: gray;
+ }
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgb(29, 107, 29);
+ }
+
+ .colorGreen {
+    color: green;
+ }
+
+ .colorWhite {
+    color: white;
+ }
+
+ .colorBlack {
+    color: black;
+ }
+
+ .bgGreen {
+    background-color: green;
+ }
+.section1 {
+    padding: 30px;
+
+}
+
+.activeButton {
+    background-color: green;
+}
+.sectionsAnimation {
+    animation: fadeInSlideUp 1s ease-in-out;
+}
+.dFlex {
+    display: flex;
+}
+
+.gap10px {
+    gap: 10px;
+}
+.cursorPointer {
+    cursor: pointer;
+}
+
+.contactUsBtn {
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border: none;
+}
+
+.openMenu {
+    display: none;
+}
+ /* Navbar */
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    z-index: 1;
+ }
+
+  nav a {
+    text-decoration: none;
+ }
+
+  nav .nav-lists {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+
+ .nav-title a {
+    font-size: 2rem;
+ }
+
+ /* Section1 Content */
+
+ .section1 {
+    background-color: rgb(206, 237, 206);
+ }
+
+
+ .section1Info {
+    display: grid;
+    grid-template-columns: 0.1fr 3fr 1fr;
+    gap: 30px;
+    padding-top: 100px;
+ }
+
+ .section1Content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+
+ .section1ContentButtons {
+    display: flex;
+    gap: 10px;
+ }
+ .section1Content h1{
+    font-size: 3rem;
+ }
+
+ .section1Content p {
+    font-size: 1.5rem;
+ }
+
+ .section1Image img {
+    width: 100%;
+ }
+ .section1InfoButtons {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .section1InfoButtons .button0 {
+width: 20px;
+height:100px;
+background-color: green;
+}
+
+.section1InfoButtons .button1 {
+    width: 20px;
+    height: 70px;
+    background-color: rgb(117, 182, 117);
+ }
+
+ .section1InfoButtons .button2 {
+    width: 20px;
+    height: 90px;
+    background-color: rgb(117, 182, 117);
+ }
+
+ .requestAQuoteBtn {
+    border: 2px solid green;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+ }
+
+.button0:hover, .button1:hover,.button2:hover {
+    background-color: green;
+}
+
+/* Section 2 */
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+
+.section2Content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: start;
+}
+
+.section2Content h1 {
+    font-size: 2rem;
+}
+
+.section2ContentAboutUs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emptyBox {
+    width: 10px;
+    height: 30px;
+    background-color: green;
+}
+.section2AboutUs01, .section2AboutUs02 {
+    display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.section2ImageAndDescription {
+    position: relative;
+}
+
+.imageProjects {
+    position: absolute;
+    top: 20px;
+  left: -30px;
+}
+
+.imageClients {
+    position: absolute;
+    bottom: -10px;
+left: 300px;
+}
+.imageProjects, .imageClients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: green;
+    mix-blend-mode:multiply;
+    padding: 10px;
+}
+
+/* Section 3  */
+
+.section3 {
+    margin-top: 130px;
+    background-color: rgb(206, 237, 206);
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.section3Content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section3OurProcess {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-top: 60px;
+}
+
+.section3process {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.section3processTitle {
+    color: green;
+    background-color: rgb(142, 179, 142);
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid green;
+}
+.section3Title {
+    display: flex;
+    gap: 10px;
+}
+
+.section3emptybox {
+    width: 10px;
+    height: 40px;
+    background-color: green;
+
+}
+
+.section3Image img{
+    padding: 20px 0px 0px 20px;
+    background-color: green;
+    width: 100%;
+
+}
+
+/* Section 4 */
+
+.section4 {
+    padding: 40px;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section4EmptyBox {
+    width: 10px;
+    height: 50px;
+    background-color: white;
+}
+.section4Title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section4TextContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section4boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.section4box {
+    background-color: rgb(62, 133, 62);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+.section4boxOffering {
+    display: flex;
+    gap: 10px;
+}
+
+.section4boxLogo {
+    font-size: 2rem;
+}
+
+.material-symbols-outlined.yard {
+    font-size: 4rem;
+}
+
+.learnMoreBtn {
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.learnMoreBtn:hover {
+    background-color: green;
+}
+
+/* Section 5 */
+
+.section5 {
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.section5Title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section5emptybox {
+    width: 20px;
+    height: 50px;
+    background-color: green;
+}
+
+.section5Text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section5buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section5LeftButton {
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 50px;
+    padding: 10px;
+    color: green;
+}
+
+.section5RightButton {
+    border: 1px solid green;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.section5clients {
+    display: grid;
+grid-template-columns: 1fr 1fr;}
+
+.section5client {
+    display: flex;
+    gap: 20px;
+}
+
+.section5clientDescription {
+    display: flex;
+flex-direction:column;
+gap: 20px;
+}
+
+.section5 img {
+   width: 250px;
+   height: 200px;
+}
+
+.section5clientImage img {
+    background-color: green;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.section5circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.circle {
+    width:20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+.circle:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/* Section 6  */
+
+.section6emptybox {
+    width: 10px;
+    height: 30px;
+    background-color: green;
+}
+
+.section6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(206, 237, 206);
+    padding-top: 150px;
+    padding-bottom: 150px;
+   
+
+
+
+}
+
+.email {
+    display: flex;
+}
+
+.section6leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.section6rightSide form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.firstName {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lastName {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form  textarea {
+    padding: 15px;
+}
+
+.firstNameAndLastName {
+    display: flex;
+gap: 10px;}
+
+
+/* Footer */
+
+footer {
+    background-color: green;
+    padding: 20px;
+}
+.footer-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid white;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+}
+
+footer input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+footer input::placeholder {
+    color: white;
+}
+
+footer h4 {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.footer-list p {
+    width: fit-content;
+}
+
+.footer-list p:hover {
+    cursor: pointer;
+    color: black;
+}
+@keyframes fadeInSlideUp {
+    0% {
+        transform: translateY(220px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 850px){
+    .section5clients {
+        grid-template-columns: 1fr;
+    }
+    .section4boxes {
+        grid-template-columns: 1fr;
+    }
+    .section2 {
+        grid-template-columns: 1fr;
+    }
+    .footer-lists {
+        grid-template-columns: 1fr;
+    }
+    .section6 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 570px) {
+    nav {
+        flex-direction: column;
+    }
+    .section2 img {
+        width: 100%;
+    }
+    .section3Image {
+        display: none;
+    }
+    .section3OurProcess {
+        display: flex;
+        flex-direction: column;
+    }
+    .section5client {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+   
+    .imageProjects,.imageClients {
+        display: none;
+    }
+    form .firstNameAndLastName {
+        display: flex;
+        flex-direction: column;
+    }
+    form .firstName, .lastName {
+        width: 100%;
+    }
+
+    .openMenu {
+        display: block
+    }
+   nav .nav-lists {
+    flex-direction: column;
+    display: none;
+   }
+  
+}
