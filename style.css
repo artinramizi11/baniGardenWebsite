@@ -369,6 +369,12 @@ left: 300px;
     gap: 10px;
 }
 
+.section5clientImage {
+  width: 400px;
+  height: 300px;
+  
+}
+
 .section5emptybox {
     width: 20px;
     height: 50px;
@@ -421,11 +427,6 @@ gap: 20px;
    height: 200px;
 }
 
-.section5clientImage img {
-    background-color: green;
-    padding-top: 20px;
-    padding-left: 20px;
-}
 
 .section5circles {
     display: flex;

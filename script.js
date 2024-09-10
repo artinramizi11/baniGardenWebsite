@@ -54,6 +54,8 @@ if(sliderPage == maxSliderPage) {
     }
 
     updateTestimonailsClients()
+    fixTestimonialsClientsPhotos()
+
     
     });
 
@@ -73,8 +75,6 @@ function updateTestimonailsClients(){
     section5Clients.innerHTML = `
     <div class="section5client">
             <div class="section5clientImage">
-                <img src="${clients[sliderPage].image1}" alt="" class="clientImage">
-
             </div>
             <div class="section5clientDescription">
                 <span class="material-symbols-outlined">
@@ -86,8 +86,6 @@ function updateTestimonailsClients(){
         </div>
         <div class="section5client">
             <div class="section5clientImage">
-                <img src="${clients[sliderPage].image2}" alt="" class="clientImage">
-
             </div>
             <div class="section5clientDescription">
                 <span class="material-symbols-outlined">
@@ -101,15 +99,28 @@ function updateTestimonailsClients(){
    for(let i=0; i<section5circle.length; i++){
     section5circle[i].style.backgroundColor = 'gray'
    }
-   section5circle[sliderPage].style.backgroundColor = 'green'
+   section5circle[sliderPage].style.backgroundColor = 'green';
+
 }
 
 updateTestimonailsClients();
 
+function fixTestimonialsClientsPhotos(){
+    const actualTestimonials = document.querySelectorAll('.section5clientImage');
+actualTestimonials[0].style.background = `url(${clients[sliderPage].image1})`
+actualTestimonials[1].style.background = `url(${clients[sliderPage].image2})`
+for(let i=0; i<actualTestimonials.length; i++){
+    actualTestimonials[i].style.backgroundSize = 'cover';
+    actualTestimonials[i].style.backgroundPosition = 'center'
+}
+
+}
+
 
 section5circles.addEventListener('click',function(e){
     sliderPage = e.target.dataset.id;
-    updateTestimonailsClients()
+    updateTestimonailsClients();
+    fixTestimonialsClientsPhotos()
 })
 
 let openMenu = true;
