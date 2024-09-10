@@ -69,6 +69,8 @@ if(sliderPage == maxSliderPage) {
         }
 
         updateTestimonailsClients()
+        fixTestimonialsClientsPhotos()
+
     })
 
 function updateTestimonailsClients(){
@@ -111,10 +113,14 @@ actualTestimonials[0].style.background = `url(${clients[sliderPage].image1})`
 actualTestimonials[1].style.background = `url(${clients[sliderPage].image2})`
 for(let i=0; i<actualTestimonials.length; i++){
     actualTestimonials[i].style.backgroundSize = 'cover';
-    actualTestimonials[i].style.backgroundPosition = 'center'
+    actualTestimonials[i].style.backgroundPosition = 'center';
+    actualTestimonials[i].style.width = '300px';
+    actualTestimonials[i].style.height - '300px'
 }
 
 }
+
+fixTestimonialsClientsPhotos()
 
 
 section5circles.addEventListener('click',function(e){

@@ -369,11 +369,6 @@ left: 300px;
     gap: 10px;
 }
 
-.section5clientImage {
-  width: 400px;
-  height: 300px;
-  
-}
 
 .section5emptybox {
     width: 20px;
@@ -412,7 +407,9 @@ left: 300px;
 grid-template-columns: 1fr 1fr;}
 
 .section5client {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
     gap: 20px;
 }
 
