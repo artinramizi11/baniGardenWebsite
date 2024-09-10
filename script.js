@@ -115,7 +115,7 @@ for(let i=0; i<actualTestimonials.length; i++){
     actualTestimonials[i].style.backgroundSize = 'cover';
     actualTestimonials[i].style.backgroundPosition = 'center';
     actualTestimonials[i].style.width = '300px';
-    actualTestimonials[i].style.height - '300px'
+    actualTestimonials[i].style.height - '300px';
 }
 
 }

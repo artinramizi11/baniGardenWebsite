@@ -402,16 +402,14 @@ left: 300px;
     color: white;
 }
 
-.section5clients {
-    display: grid;
-grid-template-columns: 1fr 1fr;}
-
 .section5client {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px;
-    gap: 20px;
 }
+.section5clients {
+    display: grid;
+grid-template-columns: 1fr 1fr;}
 
 .section5clientDescription {
     display: flex;
@@ -591,10 +589,10 @@ footer h4 {
         flex-direction: column;
     }
     .section5client {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px;
     }
+
    
     .imageProjects,.imageClients {
         display: none;
